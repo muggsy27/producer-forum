@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Downvote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Story" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Story-(Collapsed-Comment-State)" transform="translate(-298.000000, -178.000000)" fill="#000000">
+            <g id="Story" transform="translate(198.000000, 120.000000)">
+                <g id="Post-Info" transform="translate(0.000000, 12.000000)">
+                    <g id="Vote" transform="translate(96.000000, 12.000000)">
+                        <path d="M4.20116865,39.2786386 C3.83416865,39.6956386 3.98416865,40.0336386 4.53016865,40.0336386 L13.9681687,40.0336386 C14.5171687,40.0336386 14.6701687,39.7036386 14.3061687,39.2916386 L9.89616865,34.3066386 C9.53316865,33.8966386 8.94916865,33.8946386 8.57416865,34.3196386 L4.20116865,39.2796386" id="Downvote" transform="translate(9.252006, 37.016819) rotate(-180.000000) translate(-9.252006, -37.016819) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

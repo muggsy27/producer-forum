@@ -1,0 +1,14 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container p {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.container img {
+  cursor: pointer;
+}

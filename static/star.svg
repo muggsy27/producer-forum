@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-(Search-State)" transform="translate(-830.000000, -219.000000)" fill="#000000">
+            <g id="Posts" transform="translate(193.000000, 184.000000)">
+                <g id="Post" transform="translate(0.000000, 12.000000)">
+                    <g id="Vote" transform="translate(104.000000, 12.000000)">
+                        <polygon id="Star" points="542 24.5 536.709933 27.2811529 537.720246 21.3905765 533.440491 17.2188471 539.354966 16.3594235 542 11 544.645034 16.3594235 550.559509 17.2188471 546.279754 21.3905765 547.290067 27.2811529"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

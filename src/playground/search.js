@@ -1,0 +1,1 @@
+// creating a search page would revolve around querying rest api and showing results, very easy in my situation

@@ -1,0 +1,46 @@
+.container {
+  align-items: center;
+  background: white;
+  display: flex;
+  height: 64px;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+  z-index: 2;
+}
+
+.container form {
+  align-items: center;
+  background: white;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.container input {
+  background: #ECEEF1;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 32px;
+  outline: none;
+  padding-left: 16px;
+  width: 100%;
+  z-index: 1;
+}
+
+.container input::placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: .25;
+}
+
+/* media queries */
+@media screen and (max-width: 980px) {
+  .container form {
+    padding: 0 16px;
+  }
+}

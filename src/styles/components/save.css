@@ -1,0 +1,15 @@
+.container {
+  position: absolute;
+  right: 16px;
+}
+
+.container img {
+  cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 550px) {
+  .container {
+    right: 0px;
+  }
+}

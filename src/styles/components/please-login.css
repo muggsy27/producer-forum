@@ -1,0 +1,20 @@
+.container {
+  border: 1px solid #ECEEF1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.container p {
+  margin-top: 16px;
+}
+
+.btn {
+  background: #2196F3;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  height: 100%;
+  margin-top: 16px;
+  padding: 8px 22px;
+  text-decoration: none;
+}

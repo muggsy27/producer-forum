@@ -1,0 +1,39 @@
+.container {
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 26px;
+  margin: 48px 0 0 0;
+  padding: 32px;
+}
+
+.container img {
+  color: black;
+}
+
+.container h2 {
+  margin-top: 16px;
+}
+
+.container p {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.container a {
+  color: white;
+  margin: 16px 0 0 0;
+  padding: 8px 40px;
+  padding-bottom: 14px;
+  text-decoration: none;
+}
+
+.container a::before {
+  content: url('/static/google-logo.svg');
+  padding: 0 8px 0 0;
+  position: relative;
+  top: 5px;
+}

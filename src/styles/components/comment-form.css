@@ -1,0 +1,46 @@
+.container {
+  align-items: flex-start;
+  border-bottom: 1px solid #ECEEF1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 64px 32px 64px;
+}
+
+.container div:first-child {
+  width: 100%;
+}
+
+.container > form {
+  width: 100%;
+}
+
+.container header {
+  background: black;
+  border-radius: 4px 4px 0 0;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.container header span {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.container button {
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 16px;
+  outline: none;
+  padding: 8px 40px; 
+}
+
+/* media queries */
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,129 @@
+.container {
+  align-items: center;
+  border-bottom: 1px solid #ECEEF1;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 16px 0;
+  position: relative;
+}
+
+.container a {
+  color: black;
+  text-decoration: none;
+  max-width: 80%;
+}
+
+.container h1 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.container div {
+  margin-right: 32px;
+}
+
+.container a {
+  max-width: 420px;
+}
+
+.container a p {
+  font-size: 12px;
+  opacity: .25;
+}
+
+.container a span {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.container a span:first-of-type {
+  text-decoration: underline;
+}
+
+/* circle classes */
+.circle {
+  align-items: center;
+  background: black;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  display: flex;
+  font-size: 12px;
+  height: 64px;
+  justify-content: center;
+  margin: 0 32px 0 -32px;
+  overflow: hidden;
+  width: 64px;
+}
+
+.circlePink {
+  composes: circle;
+  background: #E91E63;
+}
+
+.circleBlue {
+  composes: circle;
+  background: #2196F3;
+}
+
+.circleOrange {
+  composes: circle;
+  background: #F44336;
+}
+
+.circlePurple {
+  composes: circle;
+  background: #673AB7;
+}
+
+.circleGreen {
+  composes: circle;
+  background: #009688;
+}
+
+.circleIndigo {
+  composes: circle;
+  background: #3F51B5;
+}
+
+.circle span {
+  text-decoration: none;
+}
+
+/* media queries */
+@media screen and (max-width: 1080px) {
+  .container { 
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container a {
+    max-width: 375px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container a {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container div {
+    margin-right: 16px;
+  }
+
+  .container div:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container a {
+    max-width: 275px;
+  }
+}

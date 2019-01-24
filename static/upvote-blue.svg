@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Upvote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-(Search-State)" transform="translate(-301.000000, -298.000000)" fill="#2196F3">
+            <g id="Posts" transform="translate(193.000000, 184.000000)">
+                <g id="Post" transform="translate(0.000000, 102.000000)">
+                    <g id="Vote" transform="translate(108.000000, 12.000000)">
+                        <path d="M0.531,6.47 L9.969,6.47 C10.518,6.47 10.671,6.14 10.307,5.728 L5.897,0.743 C5.534,0.333 4.95,0.331 4.575,0.756 L0.202,5.716 C-0.165,6.132 -0.015,6.47 0.531,6.47 Z" id="Upvote"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

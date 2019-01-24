@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ECEEF1;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* switch container and main classes and switch them in html as well */
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.main {
+  background: white;
+  border-radius: 4px;
+  margin: 48px 0;
+  max-width: 650px;
+}
+
+.btnBlue {
+  background: #2196F3;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.textarea {
+  background: #ECEEF1;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  font-size: 12px;
+  min-height: 120px;
+  margin: 0;
+  outline: none;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+}
+
+.textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    padding: 0 16px;
+  }
+}
