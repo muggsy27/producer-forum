@@ -14,6 +14,7 @@ const voteController = require('./controllers/votes');
 const searchController = require('./controllers/search');
 
 const dev = process.env.NODE_ENV !== 'production';
+const port = process.env.PORT || 3000;
 
 const app = next({ dev });
 
@@ -66,7 +67,7 @@ app.prepare()
     });
 
     // creates localhost:3000
-    server.listen(3000, err => {
+    server.listen(port, err => {
       if (err) throw err;
     });
 

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server/server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server/server.js"
+    "start": "NODE_ENV=production node server/server.js",
+    "heroku-postbuild": "next build"
   },
   "author": "Derek Fletes",
   "license": "ISC",
