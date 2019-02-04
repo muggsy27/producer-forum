@@ -20,11 +20,11 @@ class SavedPage extends Component {
     const { user } = this.props;
 
     if (user) {
-      axios.get(`http://localhost:3000/api/users/${user}`)
+      axios.get(`/api/users/${user}`)
         .then(res => {
           const { saved } = res.data;
 
-          axios.get('http://localhost:3000/api/stories/saved', {
+          axios.get('/api/stories/saved', {
             params: {
               stories: JSON.stringify(saved)
             }

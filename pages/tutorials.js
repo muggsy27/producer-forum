@@ -16,7 +16,7 @@ class TutorialsPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/stories/tutorials')
+    axios.get('/api/stories/tutorials')
       .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error));
 
   }

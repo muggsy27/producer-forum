@@ -16,7 +16,7 @@ class ResourcesPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/stories/resources')
+    axios.get('/api/stories/resources')
       .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error))
   }
 

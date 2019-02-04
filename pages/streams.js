@@ -16,7 +16,7 @@ class StreamsPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/stories/streams')
+    axios.get('/api/stories/streams')
       .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error));
   }
 

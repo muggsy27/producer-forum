@@ -19,7 +19,7 @@ class SearchPage extends Component {
   componentDidMount() {
     const { title } = this.props.router.query
 
-    axios.get(`http://localhost:3000/search?title=${title}`)
+    axios.get(`/search?title=${title}`)
       .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error))
   }
 
@@ -27,7 +27,7 @@ class SearchPage extends Component {
     const { title } = this.props.router.query
 
     if (title !== prevProps.router.query.title) {
-      axios.get(`http://localhost:3000/search?title=${title}`)
+      axios.get(`/search?title=${title}`)
         .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error))
     }
   }
