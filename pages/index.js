@@ -22,7 +22,7 @@ class HomePage extends Component {
     const { fetchAuth } = this.props;
     fetchAuth();
 
-    axios.get('http://localhost:3000/api/stories')
+    axios.get('/api/stories')
       .then(res => this.setState({ stories: res.data }), error => handleNetworkError(error));
 
   }
