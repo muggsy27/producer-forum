@@ -17,7 +17,7 @@ class Comments extends Component {
     const { id } = this.props;
 
     if (id) {
-      axios.get(`http://localhost:3000/api/comments/${id}`)
+      axios.get(`/api/comments/${id}`)
         .then(res => this.setState({ comments: res.data }),
           error => handleNetworkError(error));
     }

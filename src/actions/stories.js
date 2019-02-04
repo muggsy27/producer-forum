@@ -31,7 +31,7 @@ export const addStory = ({ title, link, comment, category, username, date }) => 
 export const startAddStory = story => {
   return dispatch => {
     dispatch(addStory(story))
-    axios.post('http://localhost:3000/api/stories', { story })
+    axios.post('/api/stories', { story })
       .then(() => console.log(`succesfully posted ${story}`))
       .catch(e => console.log(`error with axios POST request ${e}`));
   }
@@ -51,7 +51,7 @@ export const getStories = stories => ({
 */
 export const startGetStories = () => {
   return dispatch => {
-    axios.get('http://localhost:3000/api/stories')
+    axios.get('/api/stories')
       .then(res => dispatch(getStories(res.data)))
       .catch(e => console.log(`error with axios GET request ${e}`));
   }

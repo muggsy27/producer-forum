@@ -20,7 +20,7 @@ class Story extends Component {
     const { _id } = this.props;
 
     if (_id) {
-      axios.get(`http://localhost:3000/api/comments/${_id}`)
+      axios.get(`/api/comments/${_id}`)
         .then(res => this.setState({ comments: res.data }),
           error => handleNetworkError(error));
     }

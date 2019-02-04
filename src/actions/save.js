@@ -13,7 +13,7 @@ export const startSaveStory = ({ _id, user }) => {
   return dispatch => {
     dispatch(saveStory(_id));
 
-    axios.post(`http://localhost:3000/api/users/save_story/${user}`, { _id })
+    axios.post(`/api/users/save_story/${user}`, { _id })
       .then(error => handleNetworkError(error))
   }
 }
@@ -27,7 +27,7 @@ export const startUnsaveStory = ({ _id, user }) => {
   return dispatch => {
     dispatch(unsaveStory(_id));
 
-    axios.post(`http://localhost:3000/api/users/unsave_story/${user}`, { _id })
+    axios.post(`/api/users/unsave_story/${user}`, { _id })
       .then(error => handleNetworkError(error))
   }
 }

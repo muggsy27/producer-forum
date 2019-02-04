@@ -17,7 +17,7 @@ export const startUpvote = _id => {
   return dispatch => {
     dispatch(upvote());
 
-    axios.post('http://localhost:3000/api/votes', { _id, upvoted: true })
+    axios.post('/api/votes', { _id, upvoted: true })
       .then(error => handleNetworkError(error))
 
   }
@@ -32,7 +32,7 @@ export const startAddUpvote = ({ user, _id, upvoted, downvoted }) => {
   return dispatch => {
     dispatch(addUpvote());
 
-    axios.post(`http://localhost:3000/api/users/add_upvote/${user}`, { storyId: _id, upvoted, downvoted })
+    axios.post(`/api/users/add_upvote/${user}`, { storyId: _id, upvoted, downvoted })
       .then(error => handleNetworkError(error))
 
   }
@@ -46,7 +46,7 @@ export const modifyUpvote = () => ({
 export const startModifyUpvote = ({ user, _id, upvoted, downvoted }) => {
   return dispatch => {
     dispatch(modifyUpvote())
-    axios.post(`http://localhost:3000/api/users/modify_upvote/${user}`, { storyId: _id, upvoted, downvoted })
+    axios.post(`/api/users/modify_upvote/${user}`, { storyId: _id, upvoted, downvoted })
       .then(error => handleNetworkError(error))
 
   }
@@ -60,7 +60,7 @@ export const downvote = () => ({
 export const startDownvote = _id => {
   return dispatch => {
     dispatch(downvote());
-    axios.post('http://localhost:3000/api/votes', { _id, downvoted: true })
+    axios.post('/api/votes', { _id, downvoted: true })
       .then(error => handleNetworkError(error))
 
   }
@@ -74,7 +74,7 @@ export const startAddDownvote = ({ user, _id }) => {
   return dispatch => {
     dispatch(addDownvote());
 
-    axios.post(`http://localhost:3000/api/users/add_downvote/${user}`, { storyId: _id, upvoted: false, downvoted: true })
+    axios.post(`/api/users/add_downvote/${user}`, { storyId: _id, upvoted: false, downvoted: true })
       .then(error => handleNetworkError(error))
 
   }
@@ -88,7 +88,7 @@ export const startModifyDownvote = ({ user, _id, upvoted, downvoted }) => {
   return dispatch => {
     dispatch(modifyDownvote());
 
-    axios.post(`http://localhost:3000/api/users/modify_downvote/${user}`, { storyId: _id, upvoted, downvoted })
+    axios.post(`/api/users/modify_downvote/${user}`, { storyId: _id, upvoted, downvoted })
       .then(error => handleNetworkError(error))
 
   }

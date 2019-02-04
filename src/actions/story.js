@@ -11,7 +11,7 @@ export const getStory = story => ({
 // fetches a SINGLE story for the /story/:id page 
 export const startGetStory = id => {
   return dispatch => {
-    axios.get(`http://localhost:3000/api/stories/${id}`)
+    axios.get(`/api/stories/${id}`)
       .then(res => {
         dispatch(getStory(res.data))
       })

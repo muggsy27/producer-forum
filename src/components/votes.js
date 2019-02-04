@@ -21,14 +21,14 @@ class Votes extends Component {
     const { _id, user, authenticated } = this.props;
 
     if (_id) {
-      axios.get(`http://localhost:3000/api/votes/${_id}`)
+      axios.get(`/api/votes/${_id}`)
         .then(res => {
           const { votes } = res.data;
           this.setState({ votes });
         }, error => handleNetworkError(error))
         .then(() => {
           if (user && authenticated) {
-            axios.get(`http://localhost:3000/api/users/${user}`)
+            axios.get(`/api/users/${user}`)
               .then(res => {
                 const { votes } = res.data;
 
@@ -59,7 +59,7 @@ class Votes extends Component {
         downvoted: false
       });
 
-      axios.get(`http://localhost:3000/api/users/${user}`)
+      axios.get(`/api/users/${user}`)
         .then(res => {
           const { votes } = res.data;
           const reduxData = { user, _id, upvoted: true, downvoted: false };
@@ -104,7 +104,7 @@ class Votes extends Component {
         downvoted: true
       });
 
-      axios.get(`http://localhost:3000/api/users/${user}`)
+      axios.get(`/api/users/${user}`)
         .then(res => {
           const { votes } = res.data;
           const reduxData = { user, _id, upvoted: false, downvoted: true };

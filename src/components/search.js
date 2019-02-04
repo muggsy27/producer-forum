@@ -19,7 +19,7 @@ class Search extends Component {
   onSubmit = e => {
     e.preventDefault();
     const { query } = this.state;
-    Router.push(`http://localhost:3000/search?title=${query}`);
+    Router.push(`/search?title=${query}`);
   }
 
   render() {

@@ -19,14 +19,14 @@ export const createUser = ({ _id, username }) => ({
 
 export const fetchAuth = () => {
   return dispatch => {
-    axios.get('http://localhost:3000/auth/current_user')
+    axios.get('/auth/current_user')
       .then(req => {
         if (req.data) {
           dispatch(authUser());
 
           const user = req.data;
 
-          axios.get(`http://localhost:3000/api/users/${user}`)
+          axios.get(`/api/users/${user}`)
             .then(res => {
               const user = res.data;
               dispatch(createUser(user))
@@ -44,9 +44,9 @@ export const fetchAuth = () => {
 */
 
 
-/* 
+/*
 - User can only visit Post component IF they are authenticated, otherwise they will be redirected to the
   login page
-- Story pages will have a state check (if user isAuth then render this view, if isAuth is false then 
+- Story pages will have a state check (if user isAuth then render this view, if isAuth is false then
   render this view)
 */

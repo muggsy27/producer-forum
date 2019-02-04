@@ -55,7 +55,7 @@ class PostForm extends Component {
 
     startAddStory(story);
 
-    window.location.href = 'http://localhost:3000/';
+    window.location.href = '/';
   }
 
   render() {
@@ -86,7 +86,7 @@ class PostForm extends Component {
                 placeholder="Enter a link for your post..."
               />
               <header>
-                <span>Markdown</span>
+                <span>Comment</span>
               </header>
               <textarea
                 value={this.state.comment}

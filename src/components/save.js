@@ -19,7 +19,7 @@ class Save extends Component {
     const { _id, user } = this.props;
 
     if (user) {
-      axios.get(`http://localhost:3000/api/users/${user}`)
+      axios.get(`/api/users/${user}`)
         .then(res => {
           const { saved } = res.data;
           if (saved.includes(_id)) {
@@ -33,7 +33,7 @@ class Save extends Component {
   componentDidUpdate(prevProps) {
     const { _id, user } = this.props;
     if (user !== prevProps.user) {
-      axios.get(`http://localhost:3000/api/users/${user}`)
+      axios.get(`/api/users/${user}`)
         .then(res => {
           const { saved } = res.data;
           if (saved.includes(_id)) {
