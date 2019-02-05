@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Head from 'next/head'
 import { connect } from 'react-redux';
 import Nav from '../src/components/nav';
 import SubNav from '../src/components/sub-nav';
@@ -43,7 +44,11 @@ class StoryPage extends Component {
     return (
       loading ? <Loading />
         : (
-          <div>
+          <Fragment>
+            <Head>
+              <title>Producer Forum</title>
+              <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+            </Head>
             <Nav authenticated={authenticated} />
             <SubNav />
             <div className={container}>
@@ -54,7 +59,7 @@ class StoryPage extends Component {
                 <Comments id={id} />
               </main>
             </div>
-          </div>
+          </Fragment>
         )
     );
   }

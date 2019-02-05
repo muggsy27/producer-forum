@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head'
 import axios from 'axios';
 import { connect } from 'react-redux';
 import Nav from '../src/components/nav';
@@ -41,7 +42,11 @@ class SavedPage extends Component {
     const { stories } = this.state;
 
     return (
-      <div>
+      <Fragment>
+        <Head>
+          <title>Producer Forum</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        </Head>
         <Nav />
         <SubNav />
         <div className={container}>
@@ -54,7 +59,7 @@ class SavedPage extends Component {
             ))}
           </main>
         </div>
-      </div>
+      </Fragment>
     )
   }
 }

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Head from 'next/head'
 import axios from 'axios';
 import Nav from '../src/components/nav';
 import SubNav from '../src/components/sub-nav';
@@ -24,7 +25,11 @@ class ResourcesPage extends Component {
     const { stories } = this.state;
 
     return (
-      <div>
+      <Fragment>
+        <Head>
+          <title>Producer Forum</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        </Head>
         <Nav />
         <SubNav />
         <div className={container}>
@@ -37,7 +42,7 @@ class ResourcesPage extends Component {
             ))}
           </main>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Head from 'next/head'
 import { connect } from 'react-redux';
 import { fetchAuth } from '../src/actions/user';
 import Nav from '../src/components/nav';
@@ -28,7 +29,11 @@ class PostPage extends Component {
     return (
       loading ? <Loading />
         : (
-          <div>
+          <Fragment>
+            <Head>
+              <title>Producer Forum</title>
+              <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+            </Head>
             <Nav />
             <SubNav />
             <div className={container}>
@@ -36,7 +41,7 @@ class PostPage extends Component {
                 <PostForm />
               </main>
             </div>
-          </div>
+          </Fragment>
         )
     )
   }
