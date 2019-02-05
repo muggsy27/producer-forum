@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
-import { container, list, dropdown, circle, orange, pink, blue, green, purple, indigo } from '../styles/components/sub-nav.css';
+import { container, list, /* dropdown, circle, orange, pink, blue, green, purple, indigo */ } from '../styles/components/sub-nav.css';
 import { active } from '../styles/components/nav.css';
 
 class SubNav extends Component {
@@ -52,7 +52,7 @@ class SubNav extends Component {
               <li>Saved</li>
             </a>
           </Link>
-          <li className={dropdown}>Categories ▾
+          {/*<li className={dropdown}>Categories ▾
           <ul>
               <li className={circle}>Tutorials</li>
               <li className={orange}>Midi</li>
@@ -62,7 +62,7 @@ class SubNav extends Component {
               <li className={purple}>Show</li>
               <li className={indigo}>Streams</li>
             </ul>
-          </li>
+          </li>*/}
         </ul>
       </div>
     )

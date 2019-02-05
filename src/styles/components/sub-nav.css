@@ -142,3 +142,9 @@
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .dropdown ul li {
+    font-size: 14px;
+  }
+}

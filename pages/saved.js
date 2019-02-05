@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Head from 'next/head'
 import axios from 'axios';
 import { connect } from 'react-redux';

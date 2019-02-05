@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { connect } from 'react-redux';
 import Search from './search';
 import Hamburger from './hamburger';
-import { container, list, btn, active, dropdown, menu, open1, open2, open3 } from '../styles/components/nav.css';
+import { container, list, logo, btn, active, dropdown, menu, open1, open2, open3 } from '../styles/components/nav.css';
 
 class Nav extends Component {
   constructor(props) {
@@ -57,6 +57,7 @@ class Nav extends Component {
                 <img
                   src={'/static/logo.svg'}
                   alt="logo"
+                  className={logo}
                 />
               </li>
             </Link>

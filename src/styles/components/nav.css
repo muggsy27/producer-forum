@@ -99,7 +99,7 @@ nav {
 
 .list .btn {
   background: #2196F3;
-  border: none;
+  border: none !important;
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -130,7 +130,7 @@ nav {
   background: white;
   border-radius: 4px;
   height: 4px;
-  width: 100%;
+  width: 32px;
 }
 
 .menu .open1 {
@@ -164,6 +164,12 @@ nav {
 
 @media screen and (max-width: 450px) {
   .list:first-of-type li {
+    font-size: 14px;
     margin-right: 16px;
+  }
+
+  .logo {
+    height: 36px;
+    width: 36px;
   }
 }
