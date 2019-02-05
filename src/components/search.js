@@ -33,7 +33,6 @@ class Search extends Component {
             placeholder="Search by title..."
             value={query}
             onChange={this.onChange}
-            autoFocus={true}
           />
         </form>
       </div>
