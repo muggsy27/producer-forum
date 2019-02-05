@@ -2,7 +2,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 32px);
   overflow: hidden;
   position: fixed;
   width: 100%;
